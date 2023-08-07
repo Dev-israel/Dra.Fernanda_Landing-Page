@@ -352,7 +352,7 @@ section.contato > h2 {
 
 
 section.contato form {
-    width: 100%;
+    width: 95%;
     max-width: 500px;
     margin: 30px auto;
 }
@@ -362,13 +362,15 @@ section.contato form {
     margin-top: 10px;
 }
 
+
+
 .w100 {
     width: 100%;
 }
 
 .w50 {
     width: 50%;
-    padding:1%;
+    padding: 1% 1%;
 }
 
 .form-wraper span {
