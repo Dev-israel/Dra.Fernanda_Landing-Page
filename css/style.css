@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif ;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+/* Header do projeto*/
+header {
+    padding: 20px 2%;
+}
+
+header .logo img {
+    cursor: pointer;
+    float: left;
+    width: 336px;
+}
+
+nav.menu-mobile {
+    margin-top: 7px;
+    float: right;
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/menu-mobile.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
+}
+
+nav.menu-mobile ul {
+    text-transform: uppercase;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+    display: none;
+}
+
+nav.menu-mobile ul li {
+    padding: 10px 0;
+}
+
+header  nav.menu-desktop {
+    float: right 
+}
+
+header nav.menu-desktop ul {
+    padding: 8px 0;
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    padding: 0 20px;
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+header ul a {
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+/********/
+
+
+
+/*MOSAICO*/
+.mosaico-single {
+    float: left;
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single {
+    background-color: #ccc;
+    width: 100%;
+    padding-top: 100%;
+    border: 5px solid white;
+}
+
+/********/
+
+section.servicos > .container {
+    max-width: 800px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+section.servicos > .container .box-servico  {
+    background-image: url('../images/icone_dente.png');
+    background-size: 18px 18px;
+    background-position: center calc(100% - 5px);
+    background-repeat: no-repeat;
+}
+
+section.servicos > .container .box-servico h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase  ;
+}
+
+section.servicos > .container .box-servico p {
+    margin-top: 8px;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+section.servicos > .container .box-servico:nth-of-type(1) {
+    width: 30%;
+    padding: 50px 2%;
+    background-color: #576975;
+}
+
+section.servicos > .container .box-servico:nth-of-type(2) {
+    background-image: none;
+    width: 40%;
+    padding: 80px 2%;
+    background-color: #688293;
+}
+
+section.servicos > .container .box-servico:nth-of-type(3) {
+    width: 30%;
+    padding: 50px 2%;
+    background-color: #576975;
+}
+
+section.perfil-container {
+    padding: 40px 0;
+}
+
+section.perfil-container .perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+section.perfil-container .container {
+    max-width: 1080px;
+}
+
+section.perfil-container .perfil-wraper2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.perfil-container .img-perfil {
+    width: 57%;
+    height: 100%;
+    background-image: url('../images/img_perfil.png');
+    background-size: 100% 100%;
+}
+
+section.perfil-container .texto-perfil {
+    width: 60%;
+    padding: 0 30px;
+}
+
+section.perfil-container .texto-perfil h2 {
+    color: #698293;
+    font-size: 18px;
+}
+
+section.perfil-container .texto-perfil p {
+    color: rgb(190, 190, 190);
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 8px;
+}
+
+section.videos {
+    margin:  0 2%;
+    padding: 50px 0;
+}
+
+section.videos .box-video {
+    float: left;
+    width: 33.3%;
+    position: relative;
+    border: 5px solid white;
+    padding-top: calc(33.3% * 0.6);
+}
+
+section.videos iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.tratamentos .tratamento-container {
+    float: left;
+    width: 33.3%;
+}
+
+section.tratamentos > h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.tratamentos {
+    background-color: rgb(250, 250, 250);
+    padding: 70px 0;
+}
+
+section.tratamentos .container {
+    padding: 80px 0;
+}
+
+.tratamento-single {
+    padding: 20px;
+}
+
+.tratamento-single h2 {
+    font-size: 18px;
+    color: #737373;
+}
+
+.tratamento-single p {
+    padding: 10px 0;
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
+section.depoimentos h2{
+    color: #688293;
+    font-size: 18px;
+    text-align: center;
+}
+
+section.depoimentos > .container {
+    padding: 30px 0;
+    max-width: 350px;
+}
+
+section.depoimentos .depoimento-single {
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.depoimento-single quote {
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.depoimento-single .nome-depoimento {
+    padding: 20px 0;
+}
+
+.nome-depoimento img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.nome-depoimento span {
+    position: relative;
+    top: 5px;
+    vertical-align: top;
+    display: inline;
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.insta-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #98a5ae;
+}
+
+.insta-chamada p {
+    line-height: 23px;
+    font-size: 13px;
+    color: white;
+    padding: 10px 0;
+}
+
+.mosaico-social {
+    width: 100%;
+    float: left;
+    padding: 5px 5px;
+}
+
+.img-mosaico-single-social{
+    width:calc(100% / 9);
+    padding-top :calc(100% / 9);
+    float: left;
+    background-color: #ccc;
+    border: 5px solid white;
+}
+
+.facebook-chamada img {
+    width: 33px;
+    height: 33px;
+}
+
+.facebook-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #576957;
+}
+
+.facebook-chamada p {
+    line-height: 23px;
+    font-size: 13px;
+    color: white;
+    padding: 10px 0;
+}
+
+section.contato {
+    padding: 60px 0;
+}
+
+section.contato > h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+section.contato form {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.form-wraper {
+    float: left;
+    margin-top: 10px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+    padding:1%;
+}
+
+.form-wraper span {
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.form-wraper input[type=text],
+.form-wraper input[type=email]{
+    outline: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+
+.form-wraper textarea {
+    margin-top: 8px;
+    border: 1px solid #dadada;
+    outline: 0;
+    width: 100%;
+    padding:7px;
+    height: 121px;
+    resize: none;
+}
+
+.form-wraper input[type=submit] {
+    display: inline-block;
+    outline: 0;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #698293;
+    color: white;
+    border-radius: 3px;
+}
+
+.contato {
+    background-color: #f0f0f0;
+    margin: 0 2%;
+}
+
+footer .container {
+    max-width: 900px;
+}
+
+footer {
+    max-height: 300px;
+    padding: 40px 2%;
+    background-color: #688293;
+}
+
+footer .footer-block {
+    width: 33.3%;
+    float: left;
+}
+
+.footer-block h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+.footer-block p {
+    color: white;
+    font-size: 15px;
+    padding: 0 2%;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    .img-mosaico-single-social{
+        width:calc(100% / 6);
+        padding-top :calc(100% / 6);
+    }
+
+    .mosaico-social > div:nth-of-type(1n+7) {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+    section.servicos > .container {
+        /*
+        max-width: 800px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        top: -30px;
+        */
+        flex-direction: column;
+    }
+
+    
+    section.servicos > .container .box-servico:nth-of-type(1) {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(2) {
+        background-image: none;
+        width: 94%;
+        max-width: 380px;
+        padding: 40px 2%;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(3) {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    section.perfil-container .perfil-wraper {
+        padding-top: 0;
+    }
+
+    section.perfil-container .perfil-wraper2 {
+        /*
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        */
+        /*flex-direction: column;*/
+        height: auto;
+        position: static;
+        text-align: center;
+        display: inline-block;
+    }
+
+    section.perfil-container .img-perfil {
+        width: 50%;
+        padding-top: 70%;
+        display: inline-block;
+        height: auto;
+    }
+
+    section.perfil-container .texto-perfil {
+        display: inline-block;
+        text-align: justify;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    section.videos {
+        text-align: center;
+    }
+    
+    section.videos .box-video {
+        float: none;
+        width: 70%;
+        display: inline-block;
+        /*border: 5px solid white;*/
+        padding-top: calc(70% * 0.6);
+    }
+
+    .img-mosaico-single-social{
+        width:calc(100% / 3);
+        padding-top :calc(100% / 3);
+    }
+
+    .mosaico-social > div:nth-of-type(1n+4) {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 580px) {
+
+    footer .footer-block {
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+    }
+    
+    footer .footer-block p {
+        margin-top: 0;
+    }
+
+
+    section.perfil-container .img-perfil {
+        width: 80%;
+        padding-top: 110%;
+    }
+    
+    section.videos .box-video {
+        float: none;
+        width: 100%;
+        /*border: 5px solid white;*/
+        padding-top: calc(100% * 0.6);
+    }
+
+    .w50 {
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 480px) {
+    header .logo img {
+        width: 200px;
+    }
+
+}
